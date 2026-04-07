@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+
+
+.navbar {
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;   
+    background-color: #141433;
+}
+
+.navbar .nav-cont {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    flex-wrap: wrap;
+}
+
+.nav-title span {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0px 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #353494;
+    color: white;
+}
+
+body {
+    background-image: url(francesco-ungaro-i75WTJn-RBY-unsplash.jpg);
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+
+#image-banner img {
+    width: 100%;
+    height: auto;
+    max-height: 525px;
+    display: block; 
+    background-size: cover;  
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+#title h1 {
+    color: #ffffff;                
+    padding: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;           
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
+    margin-top: 40px;
+}
+
+
+#container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+#side-cont {
+    background-color: rgb(255, 255, 255, 0.4);
+    width: 40%; 
+    min-width: 500px;
+    padding: 40px 30px;
+    margin: 0;
+    border: 2px black solid;
+}
+
+#side-cont h2 {
+    font-size: 2rem;
+}
+
+#side-cont h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#side-cont p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;  
+    text-align: justify;
+    hyphens: auto;
+}
+
+
+#link {
+    display: flex;
+    justify-content: center; 
+}
+
+#link .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    background-color: #141433;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#side-image , #side-image2 {
+    display: flex;
+    justify-content: center; 
+}
+
+
+#side-image img {
+    width: 70%;
+    height: auto;
+    border-radius: 12px;
+}
+
+#side-image2 img {
+    width: 75%;
+    height: auto;
+    border: 15px solid white ;
+    transition: transform 0.3s ease; 
+    box-shadow: 5px 5px 5px rgb(77, 75, 75);
+}
+
+#side-image2 img:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    padding: 20px 0;
+    background-color:#141433;
+    color: white;
+}
+
+ 
+
+@media screen and (max-width: 875px) {
+    .navbar .nav-cont {
+        flex-direction: column;
+        height: auto; 
+        padding: 2px 0;
+    }
+
+    .nav-title {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+    nav ul li a {
+        display: block; 
+        margin: 5px 20px;
+    }
+
+  
+    #title h1 {
+        font-size: 2.3rem;
+        padding: 10px;
+        letter-spacing: 2px;
+    } 
+
+    #container {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    #side-cont {
+        min-width: 350px;
+        width: 70%;
+    }
+
+    #side-cont p {
+        font-size: 1.2rem;
+    }
+
+    footer {
+       font-size: 12px;
+       padding: 14px 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+   #title h1 {
+        font-size: 30px;
+        padding: 10px;
+    } 
+
+    #side-cont {
+        min-width: 250px;
+        width: 90%;
+    }
+
+    #side-cont p {
+        font-size: 1.1rem;
+    }
+
+    footer {
+       font-size: 10px;
+       padding: 10px 0;
+    }
+
+} 
