@@ -71,8 +71,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;           
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
-    margin-top: 40px;  
-    margin-bottom: 20px; /*modification a rajouter dans les autres pages*/
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 
@@ -80,48 +80,42 @@ body {
     width: 100%;
     min-height: 100vh;
     padding: 30px 20px;
-    align-content: center; 
+    background-color: #ccc;
+    align-content: center;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
     gap: 40px;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.card-cont {
-    background-color:aliceblue;
-    width: 22%;
-    border: 1px solid black ;
-    transition: 0.3s;
-    margin-bottom: 30px;
-    min-width: 350px;
-
+.card img {
+    width: 100%;
+    height: auto;
 }
 
-.card-cont:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+.card {
+    background-color: aliceblue;
+    padding: 20px;
 }
 
-.card-header {
-   text-align: center;
-   padding: 20px 10px;
-   background-color:#141433;
-   color: #ffffff;
-   font-size: 1.6rem;
+.card h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #353494;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .card-body {
-    padding: 30px 20px;
     text-align: justify;
     hyphens: auto;
     font-size: 1.4rem;
+    padding-top: 10px;
 }
-
-
 
 footer {
     text-align: center;
