@@ -48,8 +48,11 @@ nav ul li a {
 }
 
 nav a:hover {
+    background-color: #353494;   
+}
+
+.active {
     background-color: #353494;
-    color: white;
 }
 
 body {
@@ -81,12 +84,11 @@ body {
     min-height: 100vh;
     padding: 30px 20px;
     background-color: #ccc;
-    align-content: center;
 }
 
-.grid {
+.row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 500px);
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
     gap: 40px;
     justify-content: center;
 }
@@ -94,14 +96,18 @@ body {
 .card img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .card {
     background-color: aliceblue;
     padding: 20px;
+    max-width: 450px;
+    margin: 0 auto;  
 }
 
-.card h2 {
+
+.card h3 {
     text-align: center;
     font-size: 1.6rem;
     background-color: #353494;
@@ -165,12 +171,16 @@ footer {
         padding-top: 30px;
     }
     
-    .card-cont {
-        width: 80%;
+    .card {
+        max-width: 350px; 
+    }
+    
+    .card h3 {
+    font-size: 1.4rem;
     }
 
     .card-body p {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
 
     footer {
@@ -185,12 +195,19 @@ footer {
 
 
     #title h1 {
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
 
-    .card-cont {
-        width: 85%;
-        min-width: 250px;
+    .card {
+        max-width: 300px; 
+    }
+
+     .card h3 {
+    font-size: 1.3rem;
+    }
+
+    .card-body p {
+        font-size: 1.1rem;
     }
 
     footer {

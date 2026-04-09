@@ -49,7 +49,10 @@ nav ul li a {
 
 nav a:hover {
     background-color: #353494;
-    color: white;
+}
+
+.active {
+    background-color: #353494;
 }
 
 body {
@@ -91,7 +94,7 @@ body {
     flex-wrap: wrap;
 }
 
-.card-cont {
+.card {
     background-color:aliceblue;
     width: 22%;
     border: 1px solid black ;
@@ -101,17 +104,19 @@ body {
 
 }
 
-.card-cont:hover {
+.card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
 }
 
-.card-header {
-   text-align: center;
-   padding: 20px 10px;
-   background-color:#141433;
-   color: #ffffff;
-   font-size: 1.6rem;
+
+.card h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    background-color:#141433;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .card-body {
@@ -171,12 +176,16 @@ footer {
         padding-top: 30px;
     }
     
-    .card-cont {
+    .card {
         width: 80%;
     }
 
+    .card h3 {
+    font-size: 1.4rem;
+    }
+
     .card-body p {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
 
     footer {
@@ -191,13 +200,22 @@ footer {
 
 
     #title h1 {
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
 
-    .card-cont {
+    .card {
         width: 85%;
         min-width: 250px;
     }
+
+    .card h3 {
+    font-size: 1.3rem;
+    }
+
+    .card-body p {
+        font-size: 1.1rem;
+    }
+
 
     footer {
        font-size: 10px;
