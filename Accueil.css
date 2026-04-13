@@ -29,6 +29,7 @@
     font-weight: bold;
 }
 
+
 nav ul {
     display: flex;
 }
@@ -168,6 +169,8 @@ body {
 #side-image2 img:hover {
     transform: scale(1.02);
 }
+
+
 
 footer {
     text-align: center;
