@@ -161,7 +161,7 @@ body {
 #side-image2 img {
     width: 75%;
     height: auto;
-    border: 15px solid white ;
+    border: 0.75vw solid white ;
     transition: transform 0.3s ease; 
     box-shadow: 5px 5px 5px rgb(77, 75, 75);
 }

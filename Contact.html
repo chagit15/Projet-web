@@ -34,34 +34,35 @@
 
         <div id="container"> 
             
-            <table>
-                <tbody>
+             <form>
+                <table>
+                
                     <tr>
-                        <td class="section">Nom</td>
-                        <td>Nom</td>
+                        <td class="section"><label for="nom">Nom:</label></td>
+                        <td><input type="text" id="nom" name="nom" required></td>
                     </tr>
 
                      <tr>
-                        <td class="section">Prenom</td>
-                        <td>Prenom</td>
+                        <td class="section"><label for="pnom">Prenom:</label></td>
+                        <td><input type="text" id="pnom" name="pnom" required></td>
                     </tr>
 
                      <tr>
-                        <td class="section">Email</td>
-                        <td>Email</td>
+                        <td class="section"><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
                     </tr>
 
                      <tr>
-                        <td class="section">Message</td>
-                        <td>Message</td>
+                        <td class="section"><label for="message">Message:(optionel)</label></td>
+                        <td><textarea id="message" name="message"></textarea></td>
                     </tr>
 
                      <tr>
-                        <td colspan="2">Button</td>
+                        <td colspan="2"><input type="submit" value="Envoyer" class="submit-btn"></td>
                     </tr>
-                </tbody>
 
-            </table>
+                </table>
+            </form>
 
 
         </div>
