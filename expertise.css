@@ -90,6 +90,7 @@ body {
     background-image: url(francesco-ungaro-i75WTJn-RBY-unsplash.jpg);
     background-attachment: fixed; 
     background-size: cover;
+    background-position: center; 
     padding-top: 70px;
 
     display: flex;
@@ -118,8 +119,7 @@ body {
 
 #container {
     width: 100%;
-    /*min-height: 100vh;*/
-    padding: 30px 20px;
+    padding: 60px 20px;
     align-content: center; 
     flex: 1;
 }
@@ -217,12 +217,9 @@ footer {
         font-size: 2.3rem;
         padding: 10px;
         letter-spacing: 2px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     } 
-
-    #container {
-        padding-bottom: 30px;
-        padding-top: 30px;
-    }
     
     .card {
         width: 80%;
@@ -246,6 +243,9 @@ footer {
 
 @media screen and (max-width: 480px) {
 
+    nav .logo {
+        font-size: 20px;
+    }
 
     #title h1 {
         font-size: 2rem;
