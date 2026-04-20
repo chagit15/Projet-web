@@ -86,11 +86,13 @@ nav .icon-burger .line {
     border-radius: 3px;
 }
 
+
 body {
-    background-image: url(francesco-ungaro-i75WTJn-RBY-unsplash.jpg);
+    background-color: #2862a4;
+    background-image: url(../image/BackG.jpg);
     background-attachment: fixed; 
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     padding-top: 70px;
 
     display: flex;
@@ -101,7 +103,7 @@ body {
 #title {
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    margin-top: 20px;
 }
 
 
@@ -112,59 +114,53 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;           
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
-    margin-top: 40px;  
-    margin-bottom: 40px; 
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 
 #container {
     width: 100%;
-    padding: 60px 20px;
-    align-content: center; 
-    flex: 1;
+    padding: 60px 50px;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
     gap: 40px;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .card {
-    background-color:aliceblue;
-    width: 22%;
-    border: 1px solid black ;
-    transition: 0.3s;
-    margin-bottom: 30px;
-    min-width: 350px;
-
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    background-color: aliceblue;
+    padding: 20px;
+    max-width: 450px;
+    margin: 0 auto;  
 }
 
 
 .card h3 {
     text-align: center;
     font-size: 1.6rem;
-    background-color:#141433;
+    background-color: #353494;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .card-body {
-    padding: 30px 20px;
     text-align: justify;
     hyphens: auto;
     font-size: 1.4rem;
+    padding-top: 10px;
 }
-
-
 
 footer {
     text-align: center;
@@ -175,7 +171,6 @@ footer {
 }
 
 @media screen and (max-width: 950px) {
-
     nav .logo {
         float:none;
         width: auto;
@@ -220,11 +215,12 @@ footer {
         margin-top: 30px;
         margin-bottom: 30px;
     } 
+
     
     .card {
-        width: 80%;
+        max-width: 350px; 
     }
-
+    
     .card h3 {
     font-size: 1.4rem;
     }
@@ -252,18 +248,16 @@ footer {
     }
 
     .card {
-        width: 85%;
-        min-width: 250px;
+        max-width: 300px; 
     }
 
-    .card h3 {
+     .card h3 {
     font-size: 1.3rem;
     }
 
     .card-body p {
         font-size: 1.1rem;
     }
-
 
     footer {
        font-size: 10px;
